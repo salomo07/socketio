@@ -35,5 +35,5 @@ app.post('/broadcast', (req, res) => {
 });
 const PORT =process.env.PORT||3000;
 server.listen(PORT, () => {
-  console.log('listening on *:3000');
+  console.log('listening on *:'+PORT);
 });

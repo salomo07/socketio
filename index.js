@@ -33,6 +33,7 @@ app.post('/broadcast', (req, res) => {
   console.log('Broadcast : ',req.body)
   res.send('<h6>Message already broadcast</h6>');
 });
-server.listen(process.env.PORT||3000, () => {
+const PORT =process.env.PORT||3000;
+server.listen(PORT, () => {
   console.log('listening on *:3000');
 });

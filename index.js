@@ -26,6 +26,7 @@ io.on('connection', (socket) => {
 app.post('/inboundmsg', (req, res) => {
 	// console.log(io.sockets);
 	io.sockets.emit(req.body.namaevent,req.body);
+  console.log('Inbound :',req.body);
 	res.send('<h6>Message already send</h6>');
 });
 app.post('/broadcast', (req, res) => {
